@@ -53,8 +53,6 @@ From scratch, create a fully-functional, responsive website that will allow for 
 ![img](./Assets/true-tech-blog-screenshot-1.png)
 ![img](./Assets/true-tech-blog-screenshot-2.png)
 
-## Heroku Deployed URL
-https://blooming-peak-29118-29e0be2b30b7.herokuapp.com/
 
 ## How to Run
 

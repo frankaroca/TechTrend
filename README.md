@@ -1,4 +1,4 @@
-# True Tech Blog
+# TechTrend Blog
 
 ## User Story
 

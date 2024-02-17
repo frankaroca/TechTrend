@@ -1,0 +1,18 @@
+<!-- For editing or deleting a post -->
+<form id="modifyPost" name="{{post.id}}">
+    <div class="post-header">
+        <h2>Edit Post</h2>
+    </div>
+    <div class="post-content">
+        <div>
+            <label>Post Title</label>
+            <textarea class="textarea" placeholder="..." id="post-title">{{post.title}}</textarea>
+            <label>Content</label>
+            <textarea class="textarea" placeholder="..." id="post-text">{{post.content}}</textarea>
+        </div>
+        <button class="btn-generic" type="submit" id="save">Save</button>
+        <button class="btn-generic" type="reset" id="delete">Delete</button>
+    </div>
+</form>
+
+<script src="/javascript/modifyPost.js"></script>

@@ -1,0 +1,40 @@
+<!-- For being able to comment on a post -->
+<form>
+    <div class="post-header">
+        <h2>{{post.title}}</h2>
+        <h4>Posted by {{post.user.username}} on {{format_date post.created_at}}</h4>
+    </div>
+    <div>
+        <p>{{post.content}}</p>
+    </div>
+</form>
+
+{{#if loggedIn}}
+<form id="comment-form">
+    <div class="post-header">
+        <h2>Create A Comment</h2>
+    </div>
+    <div class="post-content">
+        <div>
+            <label>Comment</label>
+            <textarea class="textarea" placeholder="..." id="comment-text"></textarea>
+        </div>
+        <button class="btn-generic" type="submit">Create</button>
+    </div>
+</form>
+{{/if}}
+
+{{#each post.comments as |comment|}}
+<form>
+    <div>
+        <p>{{comment.comment_text}}</p>
+    </div>
+    <div class="post-header">
+        <h4>- {{user.username}} on {{format_date created_at}}</h4>
+    </div>
+</form>
+{{/each}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

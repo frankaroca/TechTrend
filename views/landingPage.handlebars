@@ -1,0 +1,12 @@
+<!-- For displaying all posts on the main page -->
+{{#each posts as |post|}}
+<form>
+    <div class="post-header">
+        <a class="post-link" href="/post/{{post.id}}">{{post.title}}</a>
+        <h4>Posted by {{user.username}} on {{format_date created_at}}</h4>
+    </div>
+    <div>
+        <p>{{post.content}}</p>
+    </div>
+</form>
+{{/each}}
